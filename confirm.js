@@ -55,6 +55,7 @@
     } else if (url.match(REG_ORDER)) {
         t = [
             function () { return document.getElementsByClassName('buyer-list-item')[0].children[0]; },
+            function () { return document.getElementsByClassName('buyer-list-item')[1].children[0]; },
             function () { return document.getElementsByClassName('submit-wrapper')[0].children[0]; }
         ];
         poll(t);
